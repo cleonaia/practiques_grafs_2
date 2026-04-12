@@ -25,13 +25,13 @@ def trobar_cliques_maximes(graf):
     
     vèrtexs = list(graf.nodes())
     
-    if len(vèrtexs) == 0:
+    if len(vertexs) == 0:
         return []
     
     totes_cliques = []
     
     # Generar totes les combinacions possibles de vèrtexs
-    for mida in range(2, len(vèrtexs) + 1):
+    for mida in range(2, len(vertexs) + 1):
         for subconjunt in combinations(vèrtexs, mida):
             
             # Comprovar si aquest subconjunt forma una clique
